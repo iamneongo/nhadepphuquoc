@@ -26,8 +26,8 @@ export function TestimonialsSection() {
             data-reveal="mask"
             className="mt-6 text-balance text-4xl leading-tight text-ink lg:text-5xl"
           >
-            <span className="font-serif text-black/30">Niềm tin</span>{" "}
-            <span className="font-display">được kiến tạo</span>
+            <span className="font-serif text-black/30">Khách hàng</span>{" "}
+            <span className="font-display">nói gì</span>
           </h2>
         </div>
 

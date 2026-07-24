@@ -51,7 +51,7 @@ export const INTRO = {
   titleItalic: "Lắng nghe",
   titleRest: "và đồng hành",
   paragraph:
-    "Chúng tôi mong muốn với kiến thức & kinh nghiệm làm việc tại Anh, hơn 12 năm hoạt động với nhiều dự án chất lượng sẽ góp phần định hướng tiên phong trong việc thay đổi quan niệm về phong cách sống và xu hướng trong thiết kế kiến trúc và nội thất cao cấp.",
+    "Chúng tôi làm thiết kế kiến trúc và nội thất hơn 12 năm, mang theo kinh nghiệm từ những năm làm việc tại Anh về từng dự án ở Phú Quốc. Trước khi vẽ, chúng tôi ngồi nghe gia chủ kể về cách họ muốn sống.",
 };
 
 export const PROJECT_GALLERY: ProjectImage[] = [
@@ -95,7 +95,7 @@ export const SERVICES: ServiceItem[] = [
     titleItalic: "Thiết kế",
     titleRest: "kiến trúc",
     description:
-      "Một bản thiết kế kiến trúc giá trị khi mang trong mình sự tổng hoà của nghệ thuật, mỹ thuật và khoa học. Không gian, khối hộp, ánh sáng... đều nhằm tạo ra sự tiện nghi, phù hợp với con người.",
+      "Chúng tôi bắt đầu từ cách gia đình bạn sinh hoạt, rồi sắp đặt không gian, ánh sáng và tỉ lệ quanh đó. Một ngôi nhà đẹp trước hết phải dễ ở.",
     href: "#",
   },
   {
@@ -103,7 +103,7 @@ export const SERVICES: ServiceItem[] = [
     titleItalic: "Thiết kế",
     titleRest: "nội thất",
     description:
-      "Thiết kế của Nhà Đẹp Phú Quốc hướng đến sự hài hòa giữa vẻ đẹp cổ điển trường tồn với thời gian và nét phá cách của các vật liệu mới mang hơi thở thời đại. Mỗi dự án sẽ là một góc nhìn riêng về chủ nhân ngôi nhà.",
+      "Chúng tôi phối vật liệu, màu và ánh sáng theo gu của chủ nhà thay vì chạy theo mốt. Mỗi căn giữ một nét riêng, không lặp lại một công thức.",
     href: "#",
   },
   {
@@ -111,7 +111,7 @@ export const SERVICES: ServiceItem[] = [
     titleItalic: "Thi công",
     titleRest: "và hoàn thiện nội thất",
     description:
-      "Nhà Đẹp Phú Quốc là một thương hiệu thiết kế và sản xuất nội thất chất lượng cao, độ hoàn thiện đáp ứng những yêu cầu chi tiết nhất, dịch vụ hậu mãi trọn vẹn, mang tới trải nghiệm trọn vẹn trong hành trình xây dựng tổ ấm của các khách hàng.",
+      "Xưởng của chúng tôi tự sản xuất phần lớn nội thất nên kiểm soát được chất lượng và tiến độ. Bàn giao xong, chúng tôi vẫn nhận bảo hành và sửa khi bạn cần.",
     href: "#",
   },
 ];
@@ -122,7 +122,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
     label: "1. Villa – Biệt thự",
     title: "Villa",
     description:
-      "Những công trình với sự sáng tạo nằm trong quy chuẩn kiến trúc nghiêm ngặt nhằm mang tới một khối kết cấu thẩm mỹ bền vững",
+      "Nhà rộng, nhiều phòng chức năng thì cần bố cục rõ và vật liệu bền. Chúng tôi lo từ kiến trúc đến nội thất để tổng thể ăn nhập với nhau.",
     image: "/images/project-a0208364.png",
   },
   {
@@ -130,7 +130,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
     label: "2. Căn hộ Penthouse | Duplex",
     title: "Penthouse",
     description:
-      "Những không gian đặc biệt cần sự sắp xếp nội thất đặc biệt tương xứng với những đặc quyền vốn có",
+      "Căn hộ trên cao có tầm nhìn đẹp và mặt bằng riêng. Chúng tôi tận dụng ánh sáng và bố trí nội thất gọn để giữ được khoảng thở.",
     image: "/images/project-a0206247.png",
   },
   {
@@ -138,7 +138,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
     label: "3. Khu nghỉ dưỡng | Showroom",
     title: "Showroom",
     description:
-      'Hình ảnh là yếu tố đầu tiên tác động lên cảm xúc của con người, vì vậy "thiết kế góc nhìn và trải nghiệm" dành cho thương mại là một phần rất cần thiết và nên được đầu tư.',
+      "Khách nhớ một cửa hàng qua ấn tượng nhìn đầu tiên. Chúng tôi sắp lối đi, ánh sáng và cách trưng bày để khách muốn nán lại lâu hơn.",
     image: "/images/project-psy05440.png",
   },
 ];
@@ -173,7 +173,7 @@ export const NEWS: NewsCard[] = [
 export const FOOTER = {
   headings: ["May đo phong cách sống", "Thiết kế nội thất Tư duy kiến trúc"],
   contactLabel: "Liên hệ với chúng tôi",
-  tagline: "Interior design is the art and science of enhancing the interiors.",
+  tagline: "Thiết kế và thi công nhà đẹp tại Phú Quốc.",
   socials: [
     { name: "YouTube", href: "https://youtube.com/@minhnguyendesign" },
     { name: "Facebook", href: "#" },
@@ -188,7 +188,7 @@ export const FIELDS: ServiceField[] = [
     title: "Nhà phố",
     subtitle: "Townhouse",
     description:
-      "Thiết kế & thi công nhà phố hiện đại, tối ưu công năng trên diện tích hạn chế.",
+      "Thiết kế và thi công nhà phố, tối ưu công năng trên diện tích hẹp.",
     image: "/images/project-h4.jpg",
   },
   {
@@ -196,7 +196,7 @@ export const FIELDS: ServiceField[] = [
     title: "Biệt thự – Villa",
     subtitle: "Villa",
     description:
-      "Không gian sống đẳng cấp, kiến trúc bền vững và nội thất cao cấp cho biệt thự.",
+      "Kiến trúc và nội thất cho biệt thự, chú trọng độ bền và sự thoải mái khi ở.",
     image: "/images/project-a0208364.png",
   },
   {
@@ -204,7 +204,7 @@ export const FIELDS: ServiceField[] = [
     title: "Căn hộ – Penthouse",
     subtitle: "Apartment",
     description:
-      "Giải pháp nội thất tinh tế cho căn hộ, penthouse và duplex sang trọng.",
+      "Nội thất cho căn hộ, penthouse và duplex, gọn gàng và hợp công năng.",
     image: "/images/project-a0206247.png",
   },
   {
@@ -212,7 +212,7 @@ export const FIELDS: ServiceField[] = [
     title: "Resort – Khách sạn",
     subtitle: "Hospitality",
     description:
-      "Thi công trọn gói khu nghỉ dưỡng, khách sạn mang dấu ấn thương hiệu riêng.",
+      "Thi công trọn gói khu nghỉ dưỡng và khách sạn theo nhận diện thương hiệu.",
     image: "/images/project-a0206862.png",
   },
   {
@@ -220,7 +220,7 @@ export const FIELDS: ServiceField[] = [
     title: "Showroom – Thương mại",
     subtitle: "Commercial",
     description:
-      '"Thiết kế góc nhìn & trải nghiệm" cho showroom, cửa hàng và mặt bằng thương mại.',
+      "Thiết kế showroom, cửa hàng và mặt bằng thương mại quanh trải nghiệm của khách.",
     image: "/images/project-psy05440.png",
   },
   {
@@ -228,7 +228,7 @@ export const FIELDS: ServiceField[] = [
     title: "Văn phòng",
     subtitle: "Office",
     description:
-      "Không gian làm việc truyền cảm hứng, cân bằng giữa thẩm mỹ và hiệu suất.",
+      "Không gian làm việc cân bằng giữa thẩm mỹ và sự tiện dụng hằng ngày.",
     image: "/images/project-a0206661.png",
   },
 ];
@@ -236,7 +236,7 @@ export const FIELDS: ServiceField[] = [
 export const TESTIMONIALS: Testimonial[] = [
   {
     quote:
-      "Đội ngũ Nhà Đẹp Phú Quốc biến ngôi nhà của tôi thành một tác phẩm nghệ thuật. Từng chi tiết đều được chăm chút tỉ mỉ và đúng tiến độ.",
+      "Nhà làm xong đúng hẹn, từng chi tiết đều chỉn chu. Đội thi công gọn gàng, có gì cũng trao đổi rõ với tôi.",
     name: "Anh Quốc Anh",
     role: "Villa Bãi Trường, Phú Quốc",
     rating: 5,
@@ -244,7 +244,7 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     quote:
-      "Sự chuyên nghiệp từ khâu thiết kế đến thi công thực sự vượt mong đợi. Không gian sống của gia đình tôi giờ đây vừa sang trọng vừa ấm cúng.",
+      "Từ thiết kế đến thi công đều đúng cam kết. Nhà giờ vừa đẹp vừa ấm, cả nhà tôi ở thấy dễ chịu.",
     name: "Chị Mai Hương",
     role: "Căn hộ Penthouse, Grand World",
     rating: 5,
@@ -252,7 +252,7 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     quote:
-      "Showroom được thiết kế đúng insight thương hiệu, khách hàng ghé thăm đều trầm trồ. Rất đáng để đầu tư cùng một đơn vị tận tâm như vậy.",
+      "Showroom làm đúng tinh thần thương hiệu, khách vào hay khen. Đáng để làm cùng một đơn vị chịu khó nghe mình.",
     name: "Anh Đức Thịnh",
     role: "Showroom nội thất, Dương Đông",
     rating: 5,
@@ -310,9 +310,9 @@ export const FAQS: FaqItem[] = [
 export const CONTACT = {
   eyebrow: "Liên hệ",
   title: "Bắt đầu",
-  titleAccent: "kiến tạo tổ ấm",
+  titleAccent: "làm nên tổ ấm",
   intro:
-    "Để lại thông tin, đội ngũ Nhà Đẹp Phú Quốc sẽ liên hệ tư vấn và gửi báo giá trong vòng 24 giờ.",
+    "Để lại thông tin, chúng tôi sẽ gọi lại tư vấn và gửi báo giá trong 24 giờ.",
   projectTypes: [
     "Villa – Biệt thự",
     "Căn hộ – Penthouse",
