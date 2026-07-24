@@ -14,11 +14,14 @@ export function FaqSection() {
       className="mx-auto w-full max-w-[1400px] px-5 py-20 md:px-9 lg:py-28"
     >
       <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
-        <div className="lg:sticky lg:top-32 lg:self-start">
+        <div className="lg:sticky lg:top-32 lg:self-start" data-anim>
           <span className="mnd-pill font-display">Hỏi &amp; Đáp</span>
-          <h2 className="mt-6 text-4xl leading-[1.05] text-ink lg:text-5xl">
+          <h2
+            data-reveal="mask"
+            className="mt-6 text-balance text-4xl leading-[1.05] text-ink lg:text-5xl"
+          >
             <span className="font-serif text-black/30">Câu hỏi</span>
-            <br />
+            <br className="hidden sm:block" />{" "}
             <span className="font-display">thường gặp</span>
           </h2>
           <p className="mt-6 max-w-sm text-sm leading-relaxed text-black/55">
@@ -27,7 +30,7 @@ export function FaqSection() {
           </p>
         </div>
 
-        <div className="divide-y divide-black/10 border-t border-black/10">
+        <div className="divide-y divide-black/10 border-t border-black/10" data-anim>
           {FAQS.map((faq, i) => {
             const isOpen = open === i;
             return (
@@ -40,7 +43,7 @@ export function FaqSection() {
                 >
                   <span
                     className={cn(
-                      "text-lg transition-colors lg:text-xl",
+                      "text-pretty text-lg transition-colors lg:text-xl",
                       isOpen ? "text-ink" : "text-black/70",
                     )}
                   >

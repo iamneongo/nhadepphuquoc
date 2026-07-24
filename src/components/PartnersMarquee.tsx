@@ -29,9 +29,15 @@ function Row({ reverse }: { reverse?: boolean }) {
 export function PartnersMarquee() {
   return (
     <section className="w-full border-y border-black/10 bg-white py-16 lg:py-24">
-      <div className="mx-auto mb-12 w-full max-w-[1400px] px-5 text-center md:px-9">
+      <div
+        className="mx-auto mb-12 w-full max-w-[1400px] px-5 text-center md:px-9"
+        data-anim
+      >
         <span className="mnd-pill font-display">Đối tác &amp; vật liệu</span>
-        <h2 className="mt-6 text-4xl leading-tight text-ink lg:text-5xl">
+        <h2
+          data-reveal="mask"
+          className="mt-6 text-balance text-4xl leading-tight text-ink lg:text-5xl"
+        >
           <span className="font-serif text-black/30">Đồng hành cùng</span>{" "}
           <span className="font-display">thương hiệu hàng đầu</span>
         </h2>

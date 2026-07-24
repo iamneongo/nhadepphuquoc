@@ -24,7 +24,7 @@ export function ProductCategories() {
 
     gsap.registerPlugin(ScrollTrigger);
     const mm = gsap.matchMedia();
-    mm.add("(min-width: 769px)", () => {
+    mm.add("(min-width: 768px)", () => {
       const st = ScrollTrigger.create({
         trigger: sectionRef.current,
         start: "top top",
@@ -49,9 +49,39 @@ export function ProductCategories() {
 
   return (
     <section ref={sectionRef} id="san-pham" className="w-full bg-white">
+      {/* mobile: stacked cards (no pin — native flow) */}
+      <div className="md:hidden">
+        {PRODUCT_CATEGORIES.map((cat) => (
+          <article key={cat.number} data-reveal className="border-b border-black/10">
+            <div className="relative aspect-[4/3] w-full overflow-hidden">
+              <Image
+                src={cat.image}
+                alt={cat.title}
+                fill
+                sizes="100vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="px-5 py-10">
+              <span className="mnd-pill font-display">{cat.label}</span>
+              <h2
+                data-reveal="mask"
+                className="mt-6 text-balance font-serif text-[clamp(3rem,15vw,4.5rem)] leading-[0.95] text-black/30"
+              >
+                {cat.title}
+              </h2>
+              <p className="mt-5 text-pretty text-[15px] leading-relaxed text-black/60">
+                {cat.description}
+              </p>
+            </div>
+          </article>
+        ))}
+      </div>
+
+      {/* desktop: pinned crossfade storytelling */}
       <div
         ref={pinRef}
-        className="grid h-[560px] overflow-hidden lg:h-screen lg:grid-cols-2"
+        className="hidden h-screen overflow-hidden md:grid md:grid-cols-2"
       >
         {/* image side */}
         <div className="relative h-full">
@@ -79,15 +109,15 @@ export function ProductCategories() {
         </div>
 
         {/* content side */}
-        <div className="relative flex flex-col justify-center px-5 py-14 md:px-12 lg:px-16">
+        <div className="relative flex flex-col justify-center py-14 pl-5 pr-16 md:pl-12 md:pr-20 lg:pl-16 lg:pr-24">
           <div key={active} className="[animation:mnd-fade-up_0.6s_ease-out]">
             <span className="mnd-pill font-display self-start">
               {item.label}
             </span>
-            <h2 className="mt-8 font-serif text-7xl text-black/30 lg:text-[110px] lg:leading-[0.9]">
+            <h2 className="mt-8 text-balance font-serif text-[clamp(3rem,12vw,4.5rem)] text-black/30 lg:text-[110px] lg:leading-[0.9]">
               {item.title}
             </h2>
-            <p className="mt-8 max-w-md text-[15px] leading-relaxed text-black/60">
+            <p className="mt-8 max-w-md text-pretty text-[15px] leading-relaxed text-black/60">
               {item.description}
             </p>
           </div>

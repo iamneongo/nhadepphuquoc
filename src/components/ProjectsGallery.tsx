@@ -4,29 +4,29 @@ import Image from "next/image";
 import { PROJECT_GALLERY } from "@/lib/data";
 
 /**
- * Desktop: pinned section, the track scrolls horizontally as you scroll down
- * (ScrollFX [data-hscroll] handler). Mobile: native horizontal snap scroll.
+ * The section pins and the track scrolls horizontally as you scroll down
+ * (ScrollFX [data-hscroll] handler) — same effect on mobile and desktop.
  */
 export function ProjectsGallery() {
   return (
     <section
       data-hscroll
-      className="w-full overflow-hidden bg-white py-6 md:flex md:h-screen md:items-center md:py-0"
+      className="flex h-screen w-full items-center overflow-hidden bg-white"
     >
       <div
         data-hscroll-track
-        className="no-scrollbar flex snap-x snap-mandatory gap-3 overflow-x-auto px-3 md:snap-none md:overflow-visible md:px-6 lg:gap-4"
+        className="flex gap-3 px-4 md:px-6 lg:gap-4"
       >
         {PROJECT_GALLERY.map((img) => (
           <div
             key={img.src}
-            className="group relative aspect-[4/3] h-[280px] shrink-0 snap-start overflow-hidden md:h-[64vh] md:w-[46vw] lg:w-[38vw]"
+            className="group relative aspect-[3/4] w-[80vw] shrink-0 overflow-hidden md:aspect-[4/3] md:h-[64vh] md:w-[46vw] lg:w-[38vw]"
           >
             <Image
               src={img.src}
               alt={img.alt}
               fill
-              sizes="(max-width: 768px) 60vw, 45vw"
+              sizes="(max-width: 768px) 80vw, 45vw"
               className="object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
             />
             {/* readability gradient */}

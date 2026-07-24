@@ -20,15 +20,21 @@ export function TestimonialsSection() {
   return (
     <section id="cam-nhan" className="w-full bg-[#f7f5f1] py-20 lg:py-28">
       <div className="mx-auto w-full max-w-[1100px] px-5 md:px-9">
-        <div className="mb-12 text-center">
+        <div className="mb-12 text-center" data-anim>
           <span className="mnd-pill font-display">Cảm nhận khách hàng</span>
-          <h2 className="mt-6 text-4xl leading-tight text-ink lg:text-5xl">
+          <h2
+            data-reveal="mask"
+            className="mt-6 text-balance text-4xl leading-tight text-ink lg:text-5xl"
+          >
             <span className="font-serif text-black/30">Niềm tin</span>{" "}
             <span className="font-display">được kiến tạo</span>
           </h2>
         </div>
 
-        <div className="relative rounded-sm bg-white p-8 shadow-[0_30px_80px_-40px_rgba(0,0,0,0.25)] md:p-14">
+        <div
+          data-reveal
+          className="relative rounded-sm bg-white p-8 shadow-[0_30px_80px_-40px_rgba(0,0,0,0.25)] md:p-14"
+        >
           <QuoteIcon className="mb-6 h-10 w-10 text-brand-bronze/40" />
           <blockquote
             key={active}

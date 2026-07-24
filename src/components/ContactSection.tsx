@@ -22,16 +22,19 @@ export function ContactSection() {
     <section id="lien-he" className="w-full bg-ink text-white">
       <div className="mx-auto grid w-full max-w-[1400px] gap-14 px-5 py-20 md:px-9 lg:grid-cols-2 lg:gap-24 lg:py-28">
         {/* left: intro + info */}
-        <div>
+        <div data-anim>
           <span className="mnd-pill font-display bg-white/10 text-white">
             {CONTACT.eyebrow}
           </span>
-          <h2 className="mt-6 text-5xl leading-[1.05] lg:text-6xl">
+          <h2
+            data-reveal="mask"
+            className="mt-6 text-balance text-5xl leading-[1.05] lg:text-6xl"
+          >
             <span className="font-serif text-white/40">{CONTACT.title}</span>
-            <br />
+            <br className="hidden sm:block" />{" "}
             <span className="font-display">{CONTACT.titleAccent}</span>
           </h2>
-          <p className="mt-6 max-w-md text-sm leading-relaxed text-white/60">
+          <p className="mt-6 max-w-md text-pretty text-sm leading-relaxed text-white/60">
             {CONTACT.intro}
           </p>
 
@@ -40,7 +43,7 @@ export function ContactSection() {
               <span className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-brand-bronze">
                 <MapPinIcon className="h-5 w-5" />
               </span>
-              <span className="text-sm text-white/75">
+              <span className="text-pretty text-sm text-white/75">
                 {CONTACT.info.address}
               </span>
             </li>
@@ -61,7 +64,7 @@ export function ContactSection() {
               </span>
               <a
                 href={`mailto:${CONTACT.info.email}`}
-                className="text-sm text-white/75 transition-colors hover:text-white"
+                className="break-words text-sm text-white/75 transition-colors hover:text-white"
               >
                 {CONTACT.info.email}
               </a>
@@ -70,7 +73,7 @@ export function ContactSection() {
         </div>
 
         {/* right: form */}
-        <div className="bg-white p-8 text-ink md:p-10">
+        <div data-reveal className="bg-white p-8 text-ink md:p-10">
           {sent ? (
             <div className="flex h-full min-h-[360px] flex-col items-center justify-center text-center">
               <h3 className="font-serif text-3xl">Cảm ơn bạn!</h3>

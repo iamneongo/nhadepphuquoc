@@ -8,9 +8,12 @@ export function ServiceFieldsSection() {
       id="linh-vuc"
       className="mx-auto w-full max-w-[1400px] px-5 py-20 md:px-9 lg:py-28"
     >
-      <div className="mb-14 max-w-2xl">
+      <div className="mb-14 max-w-2xl" data-anim>
         <span className="mnd-pill font-display">Lĩnh vực thi công</span>
-        <h2 className="mt-6 text-4xl leading-[1.1] text-ink lg:text-5xl">
+        <h2
+          data-reveal="mask"
+          className="mt-6 text-balance text-4xl leading-[1.1] text-ink lg:text-5xl"
+        >
           <span className="block pb-2 font-serif text-5xl leading-[1.2] text-black/30 lg:text-6xl">
             Giải pháp
           </span>

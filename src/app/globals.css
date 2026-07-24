@@ -129,6 +129,7 @@
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-sans);
+    overflow-x: hidden;
   }
   html {
     @apply font-sans;
@@ -171,6 +172,22 @@
       linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
       linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
     background-size: 46px 46px;
+  }
+}
+
+/* Anti-FOUC: once the JS engine flags <html.fx-ready>, pre-hide the elements
+   GSAP is about to animate so they never flash-then-hide on first paint.
+   Gated on motion preference so reduced-motion / no-JS users always see content. */
+@media (prefers-reduced-motion: no-preference) {
+  html.fx-ready [data-reveal]:not([data-reveal="mask"]),
+  html.fx-ready [data-anim]:not([data-anim-self]) > *:not([data-reveal]),
+  html.fx-ready [data-anim][data-anim-self],
+  html.fx-ready [data-split] .mnd-word {
+    opacity: 0;
+  }
+  html.fx-ready [data-reveal="mask"] {
+    opacity: 1;
+    clip-path: inset(0 0 100% 0);
   }
 }
 

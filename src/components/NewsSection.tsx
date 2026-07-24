@@ -5,11 +5,14 @@ import { PlusIcon } from "@/components/icons";
 export function NewsSection() {
   return (
     <section className="mx-auto w-full max-w-[1400px] px-5 py-16 md:px-9 lg:py-24">
-      <h2 className="mb-12 text-5xl leading-[1.05] text-ink lg:mb-16 lg:text-6xl">
+      <h2
+        data-reveal="mask"
+        className="mb-12 text-balance text-5xl leading-[1.05] text-ink lg:mb-16 lg:text-6xl"
+      >
         <span className="font-serif text-6xl text-black/30 lg:text-7xl">
           Tin tức
         </span>
-        <br />
+        <br className="hidden sm:block" />{" "}
         <span className="font-display">mới nhất</span>
       </h2>
 

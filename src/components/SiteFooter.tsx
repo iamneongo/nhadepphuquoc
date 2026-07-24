@@ -13,9 +13,8 @@ export function SiteFooter() {
     <footer className="mnd-grid-pattern relative w-full bg-[#161616] text-white">
       <div className="mx-auto w-full max-w-[1400px] px-5 py-20 md:px-9 lg:py-28">
         <h2
-          data-anim
-          data-anim-self
-          className="max-w-4xl py-2 font-serif text-5xl leading-[1.25] text-white sm:text-6xl lg:text-7xl"
+          data-reveal="mask"
+          className="max-w-4xl text-balance py-2 font-serif text-5xl leading-[1.25] text-white sm:text-6xl lg:text-7xl"
         >
           {FOOTER.headings[0]}
         </h2>

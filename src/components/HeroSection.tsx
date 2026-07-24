@@ -4,7 +4,7 @@ export function HeroSection() {
   return (
     <section className="w-full">
       {/* fullscreen video banner */}
-      <div className="relative h-screen min-h-[560px] w-full overflow-hidden bg-ink">
+      <div className="relative h-[70vh] min-h-[420px] w-full overflow-hidden bg-ink md:h-screen md:min-h-[560px]">
         <div
           data-scrub
           data-scale-from="1"

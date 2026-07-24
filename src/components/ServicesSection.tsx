@@ -7,9 +7,12 @@ export function ServicesSection() {
       id="dich-vu"
       className="mx-auto w-full max-w-[1400px] px-5 py-20 md:px-9 lg:py-28"
     >
-      <div className="mb-12 max-w-2xl lg:mb-16">
+      <div className="mb-12 max-w-2xl lg:mb-16" data-anim>
         <span className="mnd-pill font-display">Dịch vụ cung cấp</span>
-        <h2 className="mt-6 text-5xl leading-[1.05] text-ink lg:text-6xl">
+        <h2
+          data-reveal="mask"
+          className="mt-6 text-balance text-5xl leading-[1.05] text-ink lg:text-6xl"
+        >
           <span className="font-serif text-black/30">Kiến tạo</span>{" "}
           <span className="font-display">trọn vẹn</span>
         </h2>
@@ -28,14 +31,14 @@ export function ServicesSection() {
             </div>
 
             {/* title */}
-            <h3 className="text-3xl leading-tight text-ink md:col-span-4 lg:text-[38px]">
+            <h3 className="text-balance text-3xl leading-tight text-ink md:col-span-4 lg:text-[38px]">
               <span className="font-serif">{s.titleItalic}</span>
               <br />
               <span className="font-display">{s.titleRest}</span>
             </h3>
 
             {/* description */}
-            <p className="text-[15px] leading-[1.9] text-black/55 md:col-span-5">
+            <p className="text-pretty text-[15px] leading-[1.9] text-black/55 md:col-span-5">
               {s.description}
             </p>
 

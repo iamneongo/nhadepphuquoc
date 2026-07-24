@@ -14,7 +14,10 @@ export function AboutSection() {
         </div>
 
         <div className="mt-10 grid items-end gap-10 lg:grid-cols-12 lg:gap-16">
-          <h2 className="text-[15vw] leading-[1.05] text-ink sm:text-6xl lg:col-span-8 lg:text-[92px]">
+          <h2
+            data-reveal="mask"
+            className="text-balance text-[clamp(2.75rem,11vw,3.5rem)] leading-[1.05] text-ink sm:text-6xl lg:col-span-8 lg:text-[92px]"
+          >
             <span
               data-scrub
               data-y="26"
@@ -28,7 +31,7 @@ export function AboutSection() {
           </h2>
 
           <div className="lg:col-span-4">
-            <p className="text-[15px] leading-[1.95] text-black/60">
+            <p className="text-pretty text-[15px] leading-[1.95] text-black/60">
               {INTRO.paragraph}
             </p>
             <a
