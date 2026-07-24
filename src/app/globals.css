@@ -187,7 +187,7 @@
   }
   html.fx-ready [data-reveal="mask"] {
     opacity: 1;
-    clip-path: inset(0 0 100% 0);
+    clip-path: inset(-0.15em 0 100% 0);
   }
 }
 

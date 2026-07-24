@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { NAV_ITEMS } from "@/lib/data";
 import { cn } from "@/lib/utils";
-import { ChevronDownIcon, MenuIcon } from "@/components/icons";
+import { ChevronDownIcon, MenuIcon, XIcon } from "@/components/icons";
 
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
@@ -141,7 +141,7 @@ function MobileMenu({
             onClick={onClose}
             className="flex h-10 w-10 items-center justify-center rounded-full border border-black/15 text-ink"
           >
-            <span className="text-xl leading-none">&times;</span>
+            <XIcon className="h-5 w-5" />
           </button>
         </div>
 

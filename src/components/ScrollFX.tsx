@@ -162,11 +162,15 @@ export function ScrollFX() {
           gsap.set(el, { opacity: 1, y: 0, clipPath: "none" });
           return;
         }
+        // Negative top/bottom insets give tall glyphs (Vietnamese stacked
+        // diacritics) breathing room so tight line-heights aren't clipped
+        // mid-reveal; clip-path is fully removed on complete so it never
+        // permanently cuts text.
         const from = mask
-          ? { opacity: 1, y: 20, clipPath: "inset(0 0 100% 0)" }
+          ? { opacity: 1, y: 20, clipPath: "inset(-0.15em 0 100% 0)" }
           : { opacity: 0, y: 24 };
         const to = mask
-          ? { opacity: 1, y: 0, clipPath: "inset(0 0 0% 0)" }
+          ? { opacity: 1, y: 0, clipPath: "inset(-0.15em 0 -0.15em 0)" }
           : { opacity: 1, y: 0 };
         gsap.set(el, from);
         ScrollTrigger.create({
@@ -180,7 +184,10 @@ export function ScrollFX() {
               delay,
               ease: "power3.out",
               onStart: () => (el.style.willChange = "transform, opacity"),
-              onComplete: () => (el.style.willChange = ""),
+              onComplete: () => {
+                el.style.willChange = "";
+                if (mask) el.style.clipPath = "none";
+              },
             }),
         });
       });
